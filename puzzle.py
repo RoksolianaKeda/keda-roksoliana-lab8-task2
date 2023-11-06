@@ -1,7 +1,8 @@
 ''' Puzzle '''
 def validate_board(board):
     '''
-    >>> validate_board(board)
+    >>> validate_board(["**** ****//n", "***1 ****//n", "**  3****//n", "* 4 1****//n",\
+"     9 5 //n", " 6  83  *//n", "3   1  **//n", "  8  2***//n", "  2  ****//n"])
     False
     '''
     for i in range(9):
@@ -38,22 +39,6 @@ def validate_board(board):
                         return False
 
     return True
-
-board = [
-"**** ****",
-"***1 ****",
-"**  3****",
-"* 4 1****",
-"     9 5 ",
-" 6  83  *",
-"3   1  **",
-"  8  2***",
-"  2  ****"
-]
-
-result = validate_board(board)
-print(result)
-
 
 if __name__ == "__main__":
     import doctest
